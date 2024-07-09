@@ -17,8 +17,8 @@ class TaxiSpider(scrapy.Spider):
             Route_start = df.loc[i]['Route start']
             Route_dest = df.loc[i]['Route dest']
             passenger_count = 1
-            start_date = "28%2F05%2F2024"
-            end_date = "28%2F05%2F2024"
+            start_date = "23%2F07%2F2024"
+            end_date = "23%2F07%2F2024"
             start_time = "10%3A00"
             end_time = "13%3A00"
 
