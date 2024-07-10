@@ -8,7 +8,10 @@ class TaxiSpider(scrapy.Spider):
     start_urls = ["https://airportstaxitransfers.com"]
 
     def parse(self, response):
-        df = pd.read_excel('input.xlsx')
+        github_excel_url = 'https://github.com/kathiravanmani05/att/raw/main/input.xlsx'
+        df = pd.read_excel(github_excel_url)
+        #self.links = self.df['lin'].tolist()
+        #df = pd.read_excel('input.xlsx')
         for i in df.index[12000:18000]:
             start = df.loc[i]['start']
             end = df.loc[i]['end']
